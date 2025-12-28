@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,14 +9,24 @@ html {
 }
 
 body,
-h1, h2, h3, h4,
-p, ul, ol, li,
-fieldset, blockquote {
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+fieldset,
+blockquote {
   margin: 0;
   padding: 0;
 }
 
-ul, ol { list-style: none; }
+ul,
+ol {
+  list-style: none;
+}
 
 .page {
   display: flex;
@@ -70,7 +82,7 @@ ul, ol { list-style: none; }
   border: none;
 }
 
-.search-form__fieldset:first-child{
+.search-form__fieldset:first-child {
   flex-grow: 1;
   max-width: 225px;
 }
@@ -94,14 +106,14 @@ ul, ol { list-style: none; }
   border: none;
   border-block: 1px solid #fff;
   background: transparent;
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
   font-weight: 300;
 }
 
 .search-form__textfield::placeholder {
   color: #fff;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .search-form__checkbox-list {
@@ -137,11 +149,15 @@ ul, ol { list-style: none; }
   color: #fff;
   cursor: pointer;
   font-size: inherit;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.button:hover { opacity: .6; }
-.button:active { background-color: #545050; }
+.button:hover {
+  opacity: 0.6;
+}
+.button:active {
+  background-color: #545050;
+}
 
 .search-form__submit-button {
   inline-size: 194px;
@@ -149,7 +165,8 @@ ul, ol { list-style: none; }
   align-self: flex-end;
 }
 
-.search-form__submit-button:hover, .search-form__label-text:hover {
+.search-form__submit-button:hover,
+.search-form__label-text:hover {
   text-decoration: underline;
 }
 
@@ -168,7 +185,9 @@ ul, ol { list-style: none; }
   line-height: 0.94;
 }
 
-.content__accent { color: #545050; }
+.content__accent {
+  color: #545050;
+}
 
 .content__list-container {
   max-block-size: 600px;
@@ -190,11 +209,15 @@ ul, ol { list-style: none; }
   display: block;
   text-decoration: none;
   color: #fff;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
 }
 
-.content__card-link:hover { text-decoration: underline; }
-.content__card-link:active { background-color: #545050; }
+.content__card-link:hover {
+  text-decoration: underline;
+}
+.content__card-link:active {
+  background-color: #545050;
+}
 
 .content__video-card {
   display: flex;

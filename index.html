@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="./styles/preloader.css" />
     <link rel="stylesheet" href="./styles/error.css" />
   </head>
+
   <body class="page">
+    <!-- Основной контент страницы -->
     <main class="content">
+      <!-- Секция с видео и формой поиска -->
       <section class="result">
+        <!-- Контейнер для видео -->
         <div class="result__video-container">
+          <!-- Видео, которое будет подгружаться динамически -->
           <video src="" controls class="result__video" poster=""></video>
         </div>
+        <!-- Форма поиска видео -->
         <form class="search-form">
+          <!-- Поле ввода города -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
             <label class="search-form__label">
@@ -29,6 +36,7 @@
               />
             </label>
           </fieldset>
+          <!-- Выбор времени суток -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Время суток</h2>
             <div class="search-form__checkbox-list">
@@ -64,25 +72,29 @@
               </label>
             </div>
           </fieldset>
+          <!-- Кнопка отправки формы -->
           <button type="submit" class="button search-form__submit-button">
             Найти
           </button>
         </form>
       </section>
+      <!-- Секция со списком найденных видео -->
       <section class="content__details">
         <h1 class="title">
           <span class="content__accent">По-</span><br />смотри<br />в окно
         </h1>
+        <!-- Контейнер списка карточек -->
         <div class="content__list-container">
           <ul class="content__list">
-            <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
+            <!-- Здесь будут темплейты -->
           </ul>
         </div>
       </section>
     </main>
 
-    <!-- ТЕМПЛЕЙТЫ -->
+    <!-- Темплейты -->
 
+    <!-- Прелоадер -->
     <template class="preloader-template">
       <div class="preloader">
         <div class="preloader-chasing-squares">
@@ -94,6 +106,7 @@
       </div>
     </template>
 
+    <!-- Карточки видео -->
     <template class="cards-list-item-template">
       <li class="content__list-item">
         <a href="#0" class="content__card-link">
@@ -107,10 +120,13 @@
         </a>
       </li>
     </template>
+
+    <!-- "Показать еще" -->
     <template class="more-button-template">
       <button class="button more-button">Показать еще</button>
     </template>
 
+    <!-- Сообщения об ошибке -->
     <template class="error-template">
       <div class="error">
         <h2 class="error__title">Из этого города нет видео :(</h2>
